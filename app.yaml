@@ -1,0 +1,24 @@
+#application: turnkey-pottery-665
+application: pkandpal-app
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /unit2/food*
+  script: food.application
+- url: /fizzbuzz*
+  script: fizzbuzz.application
+- url: /food_1.*
+  script: food_1.application
+- url: /.*
+  script: ascii.application
+- url: /blog.*
+  script: blog.application
+
+
