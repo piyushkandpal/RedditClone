@@ -1,0 +1,20 @@
+#application: turnkey-pottery-665
+application: pkandpal-app
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /unit2/rot13.*
+  script: rot13_jinja.application
+- url: /unit2/signup.*
+  script: rot13_jinja.application
+- url: /unit2/welcome.*
+  script: rot13_jinja.application
+- url: /helloworld
+  script: helloworld.application
